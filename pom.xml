@@ -11,8 +11,8 @@
 
     <licenses>
         <license>
-            <name>GNU GENERAL PUBLIC LICENSE Version 3</name>
-            <url>https://www.gnu.org/licenses/gpl.txt</url>
+            <name>Apache License, Version 2.0</name>
+            <url>http://www.apache.org/licenses/LICENSE-2.0</url>
             <distribution>repo</distribution>
         </license>
     </licenses>
@@ -164,6 +164,12 @@
                 <groupId>junit</groupId>
                 <artifactId>junit</artifactId>
                 <version>4.11</version>
+                <scope>test</scope>
+            </dependency>
+            <dependency>
+                <groupId>org.assertj</groupId>
+                <artifactId>assertj-core</artifactId>
+                <version>2.9.1</version>
                 <scope>test</scope>
             </dependency>
 
