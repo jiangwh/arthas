@@ -1,0 +1,112 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!--
+  ~ Copyright (c) 2021.
+  ~ jiangwh
+  -->
+<project xsi:schemaLocation="http://maven.apache.org/POM/4.0.0 http://maven.apache.org/xsd/maven-4.0.0.xsd" xmlns="http://maven.apache.org/POM/4.0.0"
+    xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance">
+  <modelVersion>4.0.0</modelVersion>
+  <groupId>com.taobao.arthas</groupId>
+  <artifactId>logAgent</artifactId>
+  <version>3.4.6-SNAPSHOT</version>
+  <description>arthas</description>
+  <url>https://github.com/alibaba/arthas/logAgent</url>
+  <licenses>
+    <license>
+      <name>Apache License, Version 2.0</name>
+      <url>http://www.apache.org/licenses/LICENSE-2.0</url>
+      <distribution>repo</distribution>
+    </license>
+  </licenses>
+  <developers>
+    <developer>
+      <id>beiwei30</id>
+      <name>beiwei30</name>
+      <email>ian.luo@gmail.com</email>
+    </developer>
+    <developer>
+      <id>Jerrik Zhu</id>
+      <name>Jerrik Zhu</name>
+      <email>diecui1202@gmail.com</email>
+    </developer>
+    <developer>
+      <id>ralf0131</id>
+      <name>ralf0131</name>
+      <email>huxing.zhang@gmail.com</email>
+    </developer>
+    <developer>
+      <id>hengyunabc</id>
+      <name>hengyunabc</name>
+      <email>hengyunabc@gmail.com</email>
+    </developer>
+  </developers>
+  <scm>
+    <connection>scm:git:git@github.com:alibaba/arthas.git/logAgent</connection>
+    <developerConnection>scm:git:git@github.com:alibaba/arthas.git/logAgent</developerConnection>
+    <url>https://github.com/alibaba/arthas/logAgent</url>
+  </scm>
+  <distributionManagement>
+    <repository>
+      <id>sonatype-nexus-staging</id>
+      <name>Nexus Release Repository</name>
+      <url>https://oss.sonatype.org/service/local/staging/deploy/maven2/</url>
+    </repository>
+    <snapshotRepository>
+      <id>sonatype-nexus-snapshots</id>
+      <name>Sonatype Nexus Snapshots</name>
+      <url>https://oss.sonatype.org/content/repositories/snapshots/</url>
+    </snapshotRepository>
+  </distributionManagement>
+  <properties>
+    <project.build.outputTimestamp>2020-09-27T15:10:43Z</project.build.outputTimestamp>
+    <lifecycle-mapping.version>1.0.0</lifecycle-mapping.version>
+    <arguments></arguments>
+    <spring-boot.version>2.3.1.RELEASE</spring-boot.version>
+    <maven.compiler.target>1.6</maven.compiler.target>
+    <project.build.sourceEncoding>UTF-8</project.build.sourceEncoding>
+    <maven-invoker-plugin.version>3.0.0</maven-invoker-plugin.version>
+    <revision>3.4.6-SNAPSHOT</revision>
+    <sonatypeOssDistMgmtSnapshotsUrl>https://oss.sonatype.org/content/repositories/snapshots/</sonatypeOssDistMgmtSnapshotsUrl>
+    <maven.compiler.source>1.6</maven.compiler.source>
+  </properties>
+  <dependencies>
+    <dependency>
+      <groupId>net.bytebuddy</groupId>
+      <artifactId>byte-buddy</artifactId>
+      <version>1.10.18</version>
+      <scope>compile</scope>
+    </dependency>
+    <dependency>
+      <groupId>net.bytebuddy</groupId>
+      <artifactId>byte-buddy-agent</artifactId>
+      <version>1.10.18</version>
+      <scope>compile</scope>
+    </dependency>
+  </dependencies>
+  <repositories>
+    <repository>
+      <releases>
+        <enabled>false</enabled>
+      </releases>
+      <snapshots>
+        <enabled>true</enabled>
+      </snapshots>
+      <id>sonatype-nexus-snapshots</id>
+      <name>Sonatype Nexus Snapshots</name>
+      <url>https://oss.sonatype.org/content/repositories/snapshots</url>
+    </repository>
+  </repositories>
+  <pluginRepositories>
+    <pluginRepository>
+      <releases>
+        <updatePolicy>never</updatePolicy>
+      </releases>
+      <snapshots>
+        <enabled>false</enabled>
+      </snapshots>
+      <id>central</id>
+      <name>Central Repository</name>
+      <url>https://repo.maven.apache.org/maven2</url>
+    </pluginRepository>
+  </pluginRepositories>
+</project>
